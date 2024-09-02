@@ -112,13 +112,22 @@ a {
     height: 3.5rem;
     width: 14rem;
 }
-
 .profile-picture {
     border-radius: 200px;
     width: 300px;
     height: 300px;
     margin-left: 12.25rem;
     box-shadow: 0px 5px 250px -20px var(--primary-orange);
+}
+.circle
+{
+    position: absolute;
+    border-radius: 300px;
+    width: 500px;
+    height: 500px;
+    border: 2px solid var(--secondary-red);
+    z-index: -1;    
+    transform: translate(-25%, -10%);
 }
 
 .hidden {
