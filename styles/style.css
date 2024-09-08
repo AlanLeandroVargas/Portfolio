@@ -117,8 +117,8 @@ a {
     /* height: 6vh; */
     width: 10.5vw;
 }
-.contact-me p
-{
+
+.contact-me p {
     font-size: 1.25vw;
     /* display: flex;
     justify-content: center;
@@ -213,62 +213,81 @@ a {
     height: 16vw;
     background-color: var(--secondary-gray);
 }
-.technology-block:hover
-{
+
+.technology-block:hover {
     background-color: var(--primary-orange);
     box-shadow: 2px 5px 10px var(--primary-orange);
 }
-.technology-block-icon svg
-{
+
+.technology-block-icon svg {
     width: 5.5vw;
-    height: 5.5vw;    
-}  
-.technology-block-name
-{
+    height: 5.5vw;
+}
+
+.technology-block-name {
     color: var(--primary-white);
     font-size: 1.6vw;
     font-weight: bold;
 }
-.projects
-{
+
+.projects {
     margin: 0 5vw;
 }
-.project
-{
+
+.project {
     display: flex;
     justify-content: space-between;
     margin: 6.6vw 0;
 }
-.project-gallery
-{
+
+.project-gallery {
+    position: relative;
     display: flex;
     align-items: center;
     object-fit: cover;
 }
-.project-gallery img
-{    
+
+.project-gallery img {
     border-radius: 20px;
     object-fit: cover;
     width: 43vw;
-    /* height: 47.5vh;     */
 }
-.project-description h1
-{
+
+
+.project-gallery .grayscale {
+    filter: grayscale(100%);
+}
+
+.project-gallery .color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0% at center);
+    transition: clip-path 1s ease;
+}
+
+.project-gallery:hover .color {
+    clip-path: circle(150% at center); 
+}
+
+.project-description h1 {
     margin-top: 0px;
     font-size: 2vw;
     color: var(--primary-orange);
 }
-.project-description-technologies
-{  
+
+.project-description-technologies {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    column-gap: 0.4vw;    
+    column-gap: 0.4vw;
     color: var(--primary-white);
     width: 50%;
-}   
-.project-description-technologies p 
-{
+}
+
+.project-description-technologies p {
     display: flex;
     justify-content: center;
     padding: 0.10rem;
@@ -277,19 +296,19 @@ a {
     font-size: 0.8vw;
     font-weight: bold;
 }
-.project-description-text
-{
+
+.project-description-text {
     color: var(--primary-white);
     width: 40vw;
     margin: 0.8vw 0 2.5vw 0;
     font-size: 0.8vw;
 }
-.project-description-btns
-{
+
+.project-description-btns {
     display: flex;
 }
-.circle-btn
-{
+
+.circle-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -298,69 +317,69 @@ a {
     width: 5vw;
     height: 5vw;
 }
-.circle-btn svg
-{
+
+.circle-btn svg {
     width: 2.6vw;
     height: 2.6vw;
 }
-.project-description-btns-github div
-{
+
+.project-description-btns-github div {
     background-color: var(--secondary-gray);
 }
-.project-description-btns-github div:hover
-{
+
+.project-description-btns-github div:hover {
     background-color: var(--primary-orange);
     box-shadow: 0px 1px 10px var(--primary-orange);
     cursor: pointer;
 }
-.project-description-btns-web
-{
+
+.project-description-btns-web {
     transform: translateX(-50%);
 }
-.project-description-btns-web div
-{
-    background-color: var(--secondary-white);    
+
+.project-description-btns-web div {
+    background-color: var(--secondary-white);
 }
-.project-description-btns-web div:hover
-{
+
+.project-description-btns-web div:hover {
     background-color: var(--primary-orange);
     box-shadow: 0px 1px 10px var(--primary-orange);
     cursor: pointer;
 }
-.contact
-{
+
+.contact {
     margin: 0 5vw;
     border-bottom: 2px solid var(--primary-orange);
 }
-.contact-btns
-{
+
+.contact-btns {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 6.6vw 0;
 }
-.contact-btns-top
-{
+
+.contact-btns-top {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     width: 100%;
     margin-bottom: 0.8vw;
 }
-.contact-btns-bottom
-{
+
+.contact-btns-bottom {
     display: flex;
     justify-content: center;
     width: 100%;
 }
-.contact-btns-bottom button
-{
+
+.contact-btns-bottom button {
     display: flex;
     justify-content: center;
     width: 25%;
 }
-.contact-btn
-{
+
+.contact-btn {
     display: flex;
     align-items: center;
     border-radius: 10px;
@@ -369,18 +388,18 @@ a {
     padding: 0.8vw;
     margin: 0.8vw;
 }
-.contact-btn a 
-{
+
+.contact-btn a {
     font-size: 1.4vw;
     margin-left: 0.8vw;
 }
-.contact-btn p 
-{
+
+.contact-btn p {
     font-size: 1.4vw;
     margin-left: 0.8vw;
 }
-.thanks
-{
+
+.thanks {
     display: flex;
     justify-content: center;
     margin: 5vw 5vw;
@@ -391,18 +410,18 @@ a {
 ::-webkit-scrollbar {
     width: 5px;
 }
+
 ::-webkit-scrollbar-track {
     background: #1F1F1F;
 }
+
 ::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background: #ED2E14;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background: #ED2E14;
 }
 
-@media (max-width: 768px)
-{
-    
-}
+@media (max-width: 768px) {}
